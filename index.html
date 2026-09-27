@@ -31,7 +31,29 @@
     margin:0; background:var(--bg); color:var(--text);
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
     min-height:100%;
-  }
+  }<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyC0RKXNiulhbOa8bo46vIvt2pG5kURwdaM",
+    authDomain: "app-listou-74f6d.firebaseapp.com",
+    projectId: "app-listou-74f6d",
+    storageBucket: "app-listou-74f6d.firebasestorage.app",
+    messagingSenderId: "750883151458",
+    appId: "1:750883151458:web:9b43bd433dca7ac682fb3b",
+    measurementId: "G-L5S4TC6C5H"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
   header{
     background:#620113; color:#fff; padding:10px 16px;
     padding-top:calc(10px + env(safe-area-inset-top,0px));
